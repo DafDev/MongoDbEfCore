@@ -18,4 +18,8 @@
     <Using Include="Xunit" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Daf.MongoEf.Infra\Daf.MongoEf.Infra.csproj" />
+  </ItemGroup>
+
 </Project>
