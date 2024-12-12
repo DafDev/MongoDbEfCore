@@ -1,9 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>f9770e29-2cd8-4be8-b403-4fef8cb6bef6</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Daf.MongoEf.Domain\Daf.MongoEf.Domain.csproj" />
+    <ProjectReference Include="..\Daf.MongoEf.Infra\Daf.MongoEf.Infra.csproj" />
+  </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 ﻿namespace Daf.MongoEf.Infra;
 
-public interface IConfigureMongo
+public interface IConnectToMongo
 {
     void Configure();
 }

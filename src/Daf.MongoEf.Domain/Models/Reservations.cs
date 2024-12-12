@@ -12,12 +12,15 @@ public class Reservation
     
     [BsonElement("restaurant_id")]
     public ObjectId RestaurantId { get; set; }
+    
+    [BsonElement("customer_id")]
+    public ObjectId CustomerId { get; set; }
 
     [BsonElement("restaurant_name")]
-    public string RestaurantName { get; set; } = String.Empty;
+    public string RestaurantName { get; set; } = string.Empty;
 
     [Required(ErrorMessage = "The date and time is required to make this reservation")]
     [BsonElement("date")]
-    public DateTime Date { get; set; }
+    public DateTimeOffset Date { get; set; }
 
 }
